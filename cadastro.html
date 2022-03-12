@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale">
+		<script src="https://kit.fontawesome.com/07069c0e3b.js" crossorigin="anonymous"></script>
+		<style type="text/css" class="main">
+			body {
+				font-family: "Trebuchet MS";
+				background-image: url(img/fragmento.png);
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				list-style: none;
+				text-decoration: none;
+			}
+			.a {
+				width: 50%;
+				padding: 15px;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+				background: #7EFFEF;
+				text-align: center;
+				border-radius: 15px;
+				box-shadow: 4px 4px 4px rgba(0,0,0,0.35);
+				margin: 30px 0;
+			}
+			.a h1{
+				text-align: center;
+				color: #444444;
+				font-size: 2rem;
+				margin-bottom: 2rem;
+			}
+			.cadastro{
+				text-align: center;
+				position: relative;
+				width: 90%;
+				left: 50% ;
+				transform: translate(-50%);
+			}
+			.cadastro label{
+				display: block;
+			}
+			.cadastro label span{
+				margin: 5px 0;
+				display: inline-block;
+			}
+			.cadastro input,.cadastro select{
+				padding: 0 15px;
+				display: block;
+				background:  #ffffff;
+				width: 100%;
+				height: 30px;
+				margin-top: none;
+				outline:none ;
+				color: rgba(166. 166, 166);
+				font-size: 1rem;
+				border: 2px solid #FF9999;
+				border-radius: 15px;
+			}
+			.cadastro input[type="submit"]{
+				cursor: pointer; 
+				left: 50% ;
+				transform: translate(-50%);
+				position: relative;
+				width: 170px;
+				margin-top: 25px;
+				border-radius: 15px;
+				transition: all .1s ease-in-out;
+				height: 40px;
+			}
+			.cadastro input[type="submit"]:hover {
+				background: #FF9999;
+			}
+			@media (max-width: 970px){
+                .a {
+                	width: 80%;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="a">
+				<h1>Faça seu cadastro:</h1>
+				<form class="cadastro">
+					<label for="Nome:">
+						<span>Nome completo:</span>
+						<input type="text" id="Nome" name="Nome" autofocus="1">
+					</label>
+					<label for="Telefone:">
+						<span>Telefone:</span>
+						<input type="telefone" id="telefone" name="telefone">
+					</label>
+					<label for="Usuário:">
+						<span>Usuário:</span>
+						<input type="Usuário" id="Usuário" name="Usuário">
+					</label>
+
+					<label for="Senha:">
+						<span>Senha:</span>
+						<input type="password" id="Senha" name="Senha">
+					</label>
+					<label for="Email:">
+						<span>Email:</span>
+						<input type="Email" id="Email" name="Email">
+					</label>
+					<label for="Data de nascimento:">
+						<span>Data de nascimento:</span>
+						<input type="Date" id="Data de nascimento" name="Data de nascimento">
+					</label>
+					<label for="Gênero:">
+						<span>Gênero:</span>
+						<select name="genero" id="genero">
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
+							<option value="outro">Outro</option>
+							<option value="prefiro">Prefiro não informar</option>
+						</select>
+					</label>
+					<input type= "submit" value="Cadastrar">
+				</form> 
+			</div>
+		</main>
+	</body>
+</html>
